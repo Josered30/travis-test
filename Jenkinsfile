@@ -1,8 +1,6 @@
 pipeline {
     agent any
-
     tools {
-        // Install the Maven version configured as "M3" and add it to the path.
         maven "Maven",
         jdk "OpenJDK11"
     }
@@ -26,7 +24,7 @@ pipeline {
             }
         }
 
-           stage('Package') {
+        stage('Package') {
             steps {
                 withMaven(maven: 'Maven'){
                     sh 'mvn package'
