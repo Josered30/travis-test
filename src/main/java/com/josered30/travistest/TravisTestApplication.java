@@ -18,7 +18,7 @@ public class TravisTestApplication {
 
 	@GetMapping(value = "", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Response> index() {
-		return ResponseEntity.ok().body(new Response("hello"));
+		return ResponseEntity.ok().body(new Response("hello world"));
 	}
 
 	public static void main(String[] args) {
