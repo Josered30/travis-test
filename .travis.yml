@@ -1,7 +1,5 @@
 language: java
 dist: xenial
-jdk:
-- openjdk11
 
 deploy:
   provider: heroku
